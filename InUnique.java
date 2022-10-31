@@ -30,6 +30,7 @@ public class IsUnique
 }
 
 /*
+SOLUTION: 
 boolean isUniqueChars(String str) { 
 if (str.length() > 128) return false; 
 
