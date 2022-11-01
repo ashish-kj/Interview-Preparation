@@ -52,6 +52,7 @@ public class URLify
 //space = O(2n)=O(n)
 
 /*
+Olution:
 void replaceSpaces(char[] str, int trueLength) { 
     int spaceCount = e, index, i = 0; 
     for (i = ej i < trueLengthj i++) { 
