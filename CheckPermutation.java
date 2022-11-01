@@ -3,6 +3,7 @@ Check Permutation: Given two strings, write a method to decide if one is a permu
 other. 
 */
 //My Solution :1
+/*
 import java.util.*;
 
 public class CheckPermutation
@@ -25,9 +26,11 @@ public class CheckPermutation
 	        return false;
 	}
 }
-
+//runtime: o(nlong), n = char array length
+//space = o(2n)= o(n)
+*/
 //My Solution :2
-/*
+
 import java.util.*;
 public class CheckPermutation
 {
@@ -69,12 +72,10 @@ public class CheckPermutation
 	}
 	
 }
-*/
 
-/*
-runtime: o(nlong), n = char array length
-space = o(2n)= o(n)
-*/
+//runtime: o(n), n = char array length
+//space = o(n)
+
 
 /*
 Solution:
