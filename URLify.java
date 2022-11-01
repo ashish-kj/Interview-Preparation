@@ -15,41 +15,34 @@ public class URLify
 		URLify obj = new URLify();
 		
 		String input = s.nextLine();
-		char[] output = obj.urlify(input);
+		int index = s.nextInt();
+		char[] output = obj.urlify(input,index);
 		System.out.println(output);
 	}
 	
-	char[] urlify(String input){
+	char[] urlify(String input, int index){
 	    
 	    char[] inp = input.toCharArray();
-	    char[] ret_arr = new char[inp.length];
-	    int i,j,index=0;
+	    int i,j;
 	    
-	    for(i=inp.length-1;i>0;i--){
-	        if(inp[i]!=' ')
-	        {
-	            index=i;
-	            break;
-	        }
-	    }
-	    
-	    for(i=index,j=ret_arr.length-1;i>=0;i--,j--){
+	    for(i=index-1,j=inp.length-1;i>=0;i--,j--){
 	        if(inp[i]!=' '){
-	            ret_arr[j]=inp[i];
+	            inp[j]=inp[i];
 	        }
 	        else{
-	            ret_arr[j]='0';
-	            ret_arr[--j]='2';
-	            ret_arr[--j]='%';
+	            inp[j]='0';
+	            inp[--j]='2';
+	            inp[--j]='%';
 	        }
 	    }
 	    
-	    return ret_arr;
+	    return inp;
 	    
 	}
 }
-//runtime = O(n)
-//space = O(2n)=O(n)
+
+//runtime = O(n) ; n is the string length
+//space = O(n)
 
 /*
 Solution:
