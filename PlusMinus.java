@@ -39,7 +39,7 @@ class Result {
 
 }
 
-public class Solution {
+public class PlusMinus {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
