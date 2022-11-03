@@ -9,10 +9,10 @@ pale, bale -) true
 pale, bae -) false
  */
 import java.util.*;
-public class Main
+public class OneEditAway
 {
 	public static void main(String[] args) {
-		Main obj = new Main();
+		OneEditAway obj = new OneEditAway();
 		Scanner s = new Scanner(System.in);
 		String s1 = s.nextLine();
 		String s2 = s.nextLine();
